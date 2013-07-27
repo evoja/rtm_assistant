@@ -1,13 +1,21 @@
 {
-  "background": {"scripts": ["background.js"]},
-	"browser_action": 
-	{
- 		"default_icon": "favicon2-128.png",
- 		"default_title": "Test"
-	},
-	"name" : "Test",
-	"version" : "1.0",
 	"manifest_version" : 2,
-	"description" : "Test",
+
+	"name" : "RTM Assistant",
+	"version" : "1.0",
+	"description" : "This extention helps to add quickly the web-page link in RememberTheMilk. Full description is here: http://goo.gl/p7uBsw",
+
+	"icons": {"128": "favicon2-128.png"},
+
+	"browser_action": {
+		"default_icon": "favicon2-128.png",
+		"default_title": "Add to RTM"
+	},
+
+	"background":{
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+
 	"permissions" : ["tabs" , "http://*/*" , "https://*/*"]
 }
