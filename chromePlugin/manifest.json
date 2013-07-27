@@ -2,13 +2,13 @@
 	"manifest_version" : 2,
 
 	"name" : "RTM Assistant",
-	"version" : "1.0",
-	"description" : "This extention helps to add quickly the web-page link in RememberTheMilk. Full description is here: http://goo.gl/p7uBsw",
+	"version" : "0.0",
+	"description" : "This extention helps to add quickly the web-page link in RememberTheMilk.",
 
-	"icons": {"128": "favicon2-128.png"},
+	"icons": {"128": "add128.png"},
 
 	"browser_action": {
-		"default_icon": "favicon2-128.png",
+		"default_icon": "add128.png",
 		"default_title": "Add to RTM"
 	},
 
