@@ -3,7 +3,7 @@
 
 	"name" : "RTM Assistant",
 	"version" : "0.0",
-	"description" : "This extention helps to add quickly the web-page link in RememberTheMilk.",
+	"description" : "RTM Assistant helps to add quickly the web-page link in RememberTheMilk.",
 
 	"icons": {"128": "add128.png"},
 
