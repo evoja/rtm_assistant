@@ -1,17 +1,12 @@
 var openRtmWindow = function(tab, selection)
 {
-	var rtmHost = 'm.rememberthemilk.com'
-	var rtmAction = '/add'
-	var url = tab.url
 	var name = selection || tab.title
 
-	var rtmUrl='http://' + rtmHost + rtmAction + '?name=' +
-			encodeURIComponent(name.toString()) +
-		'&url=' + encodeURIComponent(url)
+	var rtmUrl='http://m.rememberthemilk.com/add?name=' +
+		encodeURIComponent(name) + '&url=' + encodeURIComponent(tab.url)
 
-	var rtmWindow = window.open(rtmUrl, 'addwindow',
+	window.open(rtmUrl, 'addwindow',
 		'status=no,toolbar=no,width=250,height=560,resizable=yes')
-
 }
 
 chrome.browserAction.onClicked.addListener(function(tab)
