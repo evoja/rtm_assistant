@@ -5,10 +5,14 @@
 	"version" : "0.1",
 	"description" : "RTM Assistant helps to add quickly the web-page link in RememberTheMilk.",
 
-	"icons": {"128": "add128.png"},
+	"icons": {"128": "i.png"},
 
 	"browser_action": {
-		"default_icon": "add128.png",
+		"default_icon": {
+			"19": "i19_.png",
+			"38": "i38.png",
+			"57": "i57.png"
+		},
 		"default_title": "Add to RTM"
 	},
 
