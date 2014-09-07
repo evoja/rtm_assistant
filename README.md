@@ -4,12 +4,6 @@ This extension helps to add quickly the web-page with URL in RememberTheMilk as 
 
 ---
 
-What's new in 0.3: We removed RTM's cow from our logo and icon, because of RTM's branding policy.
-
-What's new in 0.1: Partly support pages of Chrome Web Store. Plugin can't get selection in Chrome Store pages, but can add task with page title as a task name.
-
-----
-
 More info about the extension:
 
 You may know the ["Quick Add"-bookmarklet](https://www.rememberthemilk.com/help/?ctx=quickadd.whatis), that allows quickly add tasks to RTM. Unfortunately it doesn't include URL of based webpage.
