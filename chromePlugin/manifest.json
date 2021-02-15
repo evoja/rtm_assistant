@@ -17,5 +17,17 @@
 		"persistent": false
 	},
 
-	"permissions" : ["tabs" , "http://*/*" , "https://*/*"]
+	"content_scripts": [
+    {
+      "matches": ["https://m.rememberthemilk.com/add?name=*"],
+      "js": ["popup-control.js"]
+    }
+  ],
+
+	"permissions" : [
+		"tabs",
+		"storage",
+		"http://*/*",
+		"https://*/*"
+	]
 }
