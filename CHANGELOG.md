@@ -16,6 +16,11 @@
 
 ## v0
 
+### [0.5] - [2024-07-21][c-0.5]
+##### Changed
+* Migrate the manifest to version 3
+
+
 ### [0.4] - [2021-02-16][c-0.4]
 ##### Changed
 * Save user custom size and position of the add task pop-up. The popup will be adjusted to the last time used size and position.
@@ -54,7 +59,9 @@ The first release on Google Chrome marketplace. It works I don't know why.
 ------------
 Changelog file follows [this convention](https://keepachangelog.com/)
 
-[unreleased]: https://github.com/evoja/rtm_assistant/compare/chrome_store/0.4...master
+[unreleased]: https://github.com/evoja/rtm_assistant/compare/chrome_store/0.5...master
+[c-0.5]: https://github.com/evoja/rtm_assistant/compare/chrome_store/0.4...chrome_store/0.5
+[0.5]: https://github.com/evoja/rtm_assistant/tree/chrome_store/0.5
 [c-0.4]: https://github.com/evoja/rtm_assistant/compare/chrome_store/0.3...chrome_store/0.4
 [0.4]: https://github.com/evoja/rtm_assistant/tree/chrome_store/0.4
 [c-0.3]: https://github.com/evoja/rtm_assistant/compare/chrome_store/0.2...chrome_store/0.3
