@@ -1,5 +1,5 @@
 {
-	"manifest_version" : 2,
+	"manifest_version" : 3,
 
 	"name" : "RTM Assistant",
 	"version" : "0.4",
@@ -7,14 +7,13 @@
 
 	"icons": {"128": "i.png"},
 
-	"browser_action": {
+	"action": {
 		"default_icon": "i19_.png",
 		"default_title": "Add to RTM"
 	},
 
 	"background":{
-		"scripts": ["background.js"],
-		"persistent": false
+		"service_worker": "background.js"
 	},
 
 	"content_scripts": [
@@ -27,6 +26,9 @@
 	"permissions" : [
 		"tabs",
 		"storage",
+		"scripting"
+	],
+	"host_permissions": [
 		"http://*/*",
 		"https://*/*"
 	]

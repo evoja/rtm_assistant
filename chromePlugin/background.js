@@ -62,16 +62,24 @@ var openRtmWindow = function(tab, selection)
 		const height = Math.max(600, outerHeight || 0)
 		const left = screenX || 0
 		const top = screenY || 0
-		window.open(rtmUrl, 'addwindow',
-		`status=no,toolbar=no,width=${width},height=${height},top=${top},left=${left},resizable=yes`
-		)
+		console.log(chrome)
+		chrome.windows.create({
+			url: rtmUrl,
+			type: 'popup',
+			width: width,
+			height: height,
+			left: left,
+			top: top,
+		})
 	})
 }
 
-chrome.browserAction.onClicked.addListener(function(tab)
+chrome.action.onClicked.addListener(function(tab)
 {
-	chrome.tabs.executeScript(tab.id, {file: "bookmarklet.js"},
-		function(result)
+	chrome.scripting.executeScript({
+		target: {tabId: tab.id},
+		files: ["bookmarklet.js"]
+	}, function(result)
 		{
 			openRtmWindow(tab, result && result[0])
 		})
